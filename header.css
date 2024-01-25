@@ -1,0 +1,176 @@
+/*Styling Header Section*/
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: ubuntu, sans-serif;
+   width: 100%;
+   background: var(--BG-1, #292F36);
+}
+
+.brand-heading {
+   display: flex;
+   padding: 0px 128px;
+   flex-direction: column;
+   align-items: center;
+   align-self: stretch;
+   height: auto;
+}
+
+.header-container a:hover {
+   color: var(--Brand-1, #12F7D6);
+}
+
+.header-container {
+   display: flex;
+   padding: 15px 0px;
+   justify-content: space-between;
+   align-items: center;
+   align-self: stretch;
+
+}
+
+#brand-logo {
+   display: flex;
+   align-items: center;
+   gap: 5px;
+}
+
+#brand-logo img {
+   width: 40px;
+   height: 40px;
+}
+
+#brand-logo a {
+   text-decoration: none;
+   color: #12F7D6;
+}
+
+#brand-logo h2 {
+   font-size: 40px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 42px;
+   text-transform: capitalize;
+}
+
+.navbar-header {
+   display: flex;
+   align-items: center;
+   gap: 64px;
+}
+
+#left-navbar ul {
+   display: flex;
+   align-items: flex-start;
+   gap: 32px;
+}
+
+#left-navbar li {
+   list-style: none;
+   font-size: 30px;
+}
+
+#left-navbar a {
+   color: var(--White, #FFF);
+   text-decoration: none;
+}
+
+#right-navbar {
+   display: flex;
+   align-items: center;
+   gap: 64px;
+}
+
+#nav-search {
+   display: flex;
+   flex-direction: row;
+}
+
+#search-navbar {
+   padding: 6px 16px 6px 128px;
+   align-items: flex-start;
+   border-radius: 24px;
+   background: var(--White, #FFF);
+}
+
+#search-navbar img {
+   display: flex;
+   width: 100%;
+   height: 20px;
+   justify-content: center;
+   align-items: center;
+}
+
+#media-header ul {
+   display: flex;
+   align-items: flex-start;
+   gap: 32px;
+}
+
+#media-header li {
+   list-style: none;
+}
+
+#media-header img {
+   display: flex;
+   width: 20px;
+   height: 20px;
+   justify-content: center;
+   align-items: center;
+   color: #12F7D6;
+}
+
+#line-header {
+   color: #43454D;
+   /* width: 1230px; */
+   width: 100%
+}
+
+/* Responsiveness Accross Different Devices Screen */
+@media (max-width:480px) {
+
+   /* For Mobile Devices */
+   body {
+      width: 100%;
+   }
+
+   .brand-heading {
+      padding: 0px 5px;
+      font-size: 13px;
+      gap: auto;
+   }
+
+   #search-navbar,
+   #media-header {
+      display: none;
+   }
+
+   #brand-logo img {
+      width: 20px;
+      height: 20px;
+   }
+
+   #brand-logo h2 {
+      font-size: 13px;
+   }
+
+   #nav-search i {
+      color: #FFF;
+   }
+
+   #brand-logo {
+      gap: 1px;
+   }
+
+   #brand-logo h1 {
+      font-size: 16px;
+   }
+
+   .navbar-header {
+      gap: 16px;
+   }
+}
